@@ -8,6 +8,10 @@ namespace BackendBatchProcessing
         {
             // 1.Array of IDs:
             int[] userIdsToUpdate = { 102, 245, 360, 233 };
+
+            // 2. Raw SQL query
+            // = ANY(@ids) is array parameter syntax in PostgreSQL
+            string query = "UPDATE users SET status = 'active' WHERE id = ANY(@ids)";
         }
     }
 }
