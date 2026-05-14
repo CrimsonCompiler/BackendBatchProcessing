@@ -1,4 +1,6 @@
-﻿namespace BackendBatchProcessing
+﻿using System;
+using Npgsql;
+namespace BackendBatchProcessing
 {
     internal class Program
     {
