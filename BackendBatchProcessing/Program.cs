@@ -6,7 +6,8 @@ namespace BackendBatchProcessing
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Batch Processing");
+            // 1.Array of IDs:
+            int[] userIdsToUpdate = { 102, 245, 360, 233 };
         }
     }
 }
