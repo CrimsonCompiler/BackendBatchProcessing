@@ -18,14 +18,19 @@ namespace BackendBatchProcessing
             //using(var connection = new NpgsqlConnection("Host=localhost;Username=tousif;Database=test_db")
             //{
             //    connection.Open();
-                
+
             //    using(var cmd = new NpgsqlCommand(query, connection))
             //    {
             //        cmd.Parameters.AddWithValue("ids", userIdsToUpdate);
-                    
+
             //    int rowsAffected = cmd.ExecuteNonQuery();
             //    }
             //}
+
+            // 4. Output
+            Console.WriteLine("--- Backend Batch Update ---");
+            Console.WriteLine("Executing Query: " + query);
+            Console.WriteLine($"Passing Array Size: {userIdsToUpdate.Length} IDs at once.");
         }
     }
 }
